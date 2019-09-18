@@ -1,9 +1,9 @@
 public class Temperatura {
-    double converterParaCelsius(double valor){
+    public double setConverterParaCelsius(double valor){
         System.out.println((valor-32)/1.8); 
         return valor;
      }
-    double converterParaFarenheit(double valor){
+    public double setConverterParaFarenheit(double valor){
         System.out.println((valor*1.8)+32);
         return valor;
     }

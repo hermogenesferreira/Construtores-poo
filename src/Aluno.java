@@ -1,9 +1,9 @@
 public class Aluno {
-    String nome;
-    String cpf;
-    Data dataDeNascimento;
+    private String nome;
+    private String cpf;
+    private Data dataDeNascimento;
    
-    String imprimir(){
+    public String getImprimir(){
        
         String imprimir = nome + "\n" + cpf + "\n" + dataDeNascimento;
         return imprimir;

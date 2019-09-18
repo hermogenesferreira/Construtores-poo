@@ -1,15 +1,15 @@
 public class Casa {
-    String cor;
-    Porta porta1;
-    Porta porta2;
-    Porta porta3;
+    private String cor;
+    private Porta porta1;
+    private Porta porta2;
+    private Porta porta3;
     
-    void pinta(String s){
+    public void getPinta(String s){
         this.cor = s;
         System.out.println("A porta foi pintada de " + this.cor);
     }
     
-    int quantasPortasEstaoAbertas(){
+    public int setQuantasPortasEstaoAbertas(){
         int abertas = 0;  
         if(porta1.aberta == 1)abertas++;  
         if(porta2.aberta == 1 )abertas++;  

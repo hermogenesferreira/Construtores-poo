@@ -1,25 +1,25 @@
 public class Porta {
     
-    int aberta;
-    String cor;
-    int dimensaoX;
-    int dimensaoY;
-    int dimensaoZ;
+    public int aberta;
+    private String cor;
+    private int dimensaoX;
+    private int dimensaoY;
+    private int dimensaoZ;
     
-    void abre(){
+    public void setAbre(){
         this.aberta = 1;
     }
     
-    void fecha(){
+    public void setFecha(){
         this.aberta = 0;
     }
     
-    void pinta(String s){
+    public void setPinta(String s){
         this.cor = s;
 	System.out.println("A porta foi pintada de " + this.cor);
     }
     
-    boolean estaAberta(){
+    public boolean setEstaAberta(){
         if(this.aberta == 1){
             System.out.println("A porta esta aberta!");
             return true;

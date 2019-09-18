@@ -1,12 +1,12 @@
 public class Produto {
-   String nome;
-   int preço;
+   private String nome;
+   private int preço;
    
-   int diminuir10(){
+   public int setDiminuir10(){
     return this.preço = ((this.preço/100)*90);
    }
    
-   int aumenta25(){
+   public int setAumenta25(){
     return this.preço = ((this.preço/100)*115);
    }
 }

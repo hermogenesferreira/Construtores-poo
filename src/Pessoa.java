@@ -1,13 +1,13 @@
 public class Pessoa {
-    String nome;
-    int idade;
+    private String nome;
+    private int idade;
     
-    void fazAniversario(){
+    public void getFazAniversario(){
         int aniversario = this.idade+1;
         this.idade = aniversario;
     }
     
-    void imprimir(){
+    public void getImprimir(){
         System.out.println("Nome:" + this.nome);
         System.out.println("Idade:" + this.idade);
     }
